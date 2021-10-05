@@ -1,5 +1,12 @@
 import { useMemo, useState } from "react";
 
+/*
+useMemo is similar to useCallback hook as it accepts a function
+and a list of dependencies but it returns the memoized value returned by the passed function.
+It recalculated the value only when one of its dependencies change.
+It is useful to avoid expensive calculations on every
+render when the returned value is not going to change
+*/
 const UseCaseInitialValue = props => {
     const [redditsList, setRedditsList] = useState([]);
     const [isLoading, setIsLoading] = useState(false);

@@ -31,12 +31,23 @@ function UseCaseAvoidRendering(){
     const [input, setInput] = useState(1);
     const [light, setLight] = useState(true);
 
-    {/* useCallback memoizes the getItems() which
+    /* useCallback memoizes the getItems() which
        returns a list of number which is number+10
-       and number + 100 */}
-    const getItems = useCallback(() => {
+       and number + 100 *
+       Param is not a dependency of the callback function being called
+    */
+    const getItems = useCallback((param) => {
+        if (param) return 'I have a param';
         return [input + 10, input + 100];
     }, [input]);
+
+
+    /* when not memoized , it returns another callback with another reference
+    that React cannot know if it is the same.
+    0 */
+    // const getItems = () => {
+    //     return [input + 10, input + 100];
+    // };
 
     const theme = {
         backgroundColor: light ? "White": "grey",
