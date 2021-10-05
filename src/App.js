@@ -18,6 +18,7 @@ import UseCaseUpdateData from './components/UseCaseUseEffect/UseCaseUpdateData';
 import UseCaseUpdateApi from './components/UseCaseUseEffect/UseCaseUpdateApi';
 import UseCaseSort from './components/UseCaseUseMemo/UseCaseSort';
 import UseCaseInitialValue from './components/UseCaseUseMemo/UseCaseInitialValue';
+import UseCaseAvoidRendering from './components/UseCasesUseCallBack/UseCaseAvoidRendering';
 
 function App() {
   return (
@@ -106,6 +107,11 @@ function App() {
           <Route exact path="/usememo/initial-value">
             <div className={classes.centered}>
               <UseCaseInitialValue />
+            </div>
+          </Route>
+          <Route exact path="/usecallback/avoid-rendering">
+            <div className={classes.centered}>
+              <UseCaseAvoidRendering />
             </div>
           </Route>
         </Switch>

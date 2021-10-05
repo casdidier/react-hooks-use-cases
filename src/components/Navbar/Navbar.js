@@ -37,6 +37,11 @@ const Navbar = props => {
                         <li><Link to="/usememo/initial-value">Expensive function call: create a complex initial value counting how many posts have more than 10 votes in a subreddit</Link></li>
                     </ul>
                 </li>
+                <li>useCallBack
+                    <ul>
+                        <li><Link to="/usecallback/avoid-rendering">Avoid unnecessary rendering</Link></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     );
