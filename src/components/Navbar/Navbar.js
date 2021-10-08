@@ -42,6 +42,11 @@ const Navbar = props => {
                         <li><Link to="/usecallback/avoid-rendering">Avoid unnecessary rendering</Link></li>
                     </ul>
                 </li>
+                <li>useContext
+                    <ul>
+                        <li><Link to="/usecontext/share-data">share data across components</Link></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     );

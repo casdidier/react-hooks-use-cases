@@ -19,6 +19,8 @@ import UseCaseUpdateApi from './components/UseCaseUseEffect/UseCaseUpdateApi';
 import UseCaseSort from './components/UseCaseUseMemo/UseCaseSort';
 import UseCaseInitialValue from './components/UseCaseUseMemo/UseCaseInitialValue';
 import UseCaseAvoidRendering from './components/UseCasesUseCallBack/UseCaseAvoidRendering';
+import UseCaseSharingData from './components/UseCaseUseContext/UseCaseSharingData';
+
 
 function App() {
   return (
@@ -112,6 +114,11 @@ function App() {
           <Route exact path="/usecallback/avoid-rendering">
             <div className={classes.centered}>
               <UseCaseAvoidRendering />
+            </div>
+          </Route>
+          <Route exact path="/usecontext/share-data">
+            <div className={classes.centered}>
+              <UseCaseSharingData />
             </div>
           </Route>
         </Switch>
