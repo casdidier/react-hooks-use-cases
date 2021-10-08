@@ -20,6 +20,7 @@ import UseCaseSort from './components/UseCaseUseMemo/UseCaseSort';
 import UseCaseInitialValue from './components/UseCaseUseMemo/UseCaseInitialValue';
 import UseCaseAvoidRendering from './components/UseCasesUseCallBack/UseCaseAvoidRendering';
 import UseCaseSharingData from './components/UseCaseUseContext/UseCaseSharingData';
+import UseCaseUpdateButNotRender from './components/UseCaseUseRef/UseCaseUpdateButNotRender';
 
 
 function App() {
@@ -121,6 +122,14 @@ function App() {
               <UseCaseSharingData />
             </div>
           </Route>
+          <Route exact path="/useref/create-mutable-value-not-re-render-ui">
+            <div className={classes.centered}>
+              <UseCaseUpdateButNotRender />
+            </div>
+          </Route>
+
+
+
         </Switch>
       </Router>
     </div>

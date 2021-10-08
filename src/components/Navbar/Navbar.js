@@ -47,6 +47,11 @@ const Navbar = props => {
                         <li><Link to="/usecontext/share-data">share data across components</Link></li>
                     </ul>
                 </li>
+                <li>useRef
+                    <ul>
+                        <li><Link to="/useref/create-mutable-value-not-re-render-ui">Create a mutable value that does not re-render the UI</Link></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     );
